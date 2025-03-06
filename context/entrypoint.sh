@@ -78,7 +78,7 @@ init_env() {
 	: "${DEBUG_DJANGO:=false}"
 	: "${LANGUAGE_CODE:=en-us}"
 	: "${TIME_ZONE:=UTC}"
-	: "${ALLOWED_HOSTS:='*,.localhost,127.0.0.1,[::1]'}"
+	: "${ALLOWED_HOSTS:=*,.localhost,127.0.0.1,[::1]}"
 
 	declare -g -x X509_CRT=${X509_CRT:=${DATA_DIR}/certs/crt.pem}
 	declare -g -x X509_KEY=${X509_KEY:=${DATA_DIR}/certs/key.pem}
